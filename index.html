@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link href="https://cdn.jsdelivr.net/npm/plyr@3.8.10/dist/plyr.css" rel="stylesheet" />
+    <style>
+        .plyr { 
+            width: 100%; 
+            height: auto; 
+        }
+    </style>
+</head>
+<body>
+    <video id="myVideo" class="plyr" controls>
+        <source src="http://protech.tamilboxoffice.in/Torrent/Mazhai%20Pidikatha%20Manithan%20(2024)%20Tamil%20Box%20Office%20App.mkv" type="video/mp4">
+        <p>Your browser does not support the video tag.</p>
+    </video>
+
+    <script src="https://cdn.jsdelivr.net/npm/plyr@3.8.10/dist/plyr.polyfilled.js"></script>
+    <script>
+        const player = new Plyr('#myVideo');
+    </script>
+</body>
+</html>
